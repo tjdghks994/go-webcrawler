@@ -4,6 +4,7 @@ import (
 	"github.com/tjdghks994/go-webcrawler/crawler"
 )
 
+var sss string = "https://www.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=2130#page1"
 var cauURL string = "https://www.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=100#page1"
 var paging string = "https://www.cau.ac.kr/bvs/pagingFH.do"
 
@@ -16,6 +17,6 @@ func main() {
 	// c.Crawling(secCAUURL)
 
 	CAU := new(crawler.CAUNotice)
-	CAU.Crawling(paging)
+	CAU.Crawling(sss)
 
 }
